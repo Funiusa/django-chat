@@ -8,6 +8,8 @@ authors = ["Denis"]
 python = "^3.9"
 django = "^4.2.2"
 python-dotenv = "^1.0.0"
+psycopg2-binary = "^2.9.6"
+black = "^23.3.0"
 
 [tool.poetry.dev-dependencies]
 

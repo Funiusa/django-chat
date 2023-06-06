@@ -48,7 +48,7 @@ COPY ./chat/pyproject.toml ./chat/config.toml ./
 
 RUN poetry install  --no-interaction --no-ansi
 
-ENV DJANGO_SETTINGS_MODULE="chat.settings"
+ENV DJANGO_SETTINGS_MODULE="main.settings"
 
 CMD wait-for-it.sh db:5432 -- python manage.py runserver 0.0.0.0:8000
 
